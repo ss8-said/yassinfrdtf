@@ -1,0 +1,447 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "hi", "hello", "hey", "good morning", "good afternoon", "good evening",
+                "hillo", "helloo", "heyy", "hi there", "greetings", "hello there",
+                "hey there", "hi bot", "hello bot", "yo", "what's up", "sup", "hiya",
+                "howdy", "greets", "hi friend", "hello friend", "hey chat", "hi assistant",
+                "good day", "hi ai", "hello ai", "hey assistant", "hi team", "hello there bot",
+                "hey buddy", "hi guide", "hello helper", "greetings bot", "hi there assistant"
+            ],
+            "responses": [
+                "Hello! I'm your AI Program Guide. How can I assist you today?",
+                "Hi there! Ready to explore our world-class AI curriculum together?",
+                "Greetings! I'm here to provide detailed information about our AI programs.",
+                "Welcome! As your AI orientation assistant, I can help with courses, admissions, and career paths.",
+                "Hello! Let's begin your AI education journey. What would you like to know first?"
+            ],
+            "context": ["main_menu"]
+        },
+        {
+            "tag": "bot_identity",
+            "patterns": [
+                "who are you", "what are you", "introduce yourself", "describe yourself",
+                "your name", "are you a bot", "are you human", "what's your name",
+                "tell me about you", "your purpose", "who made you", "your identity",
+                "what can you do", "your capabilities", "your job", "what do you do",
+                "your function", "present yourself", "who created you", "your role",
+                "what is your purpose", "why were you created", "are you real",
+                "are you an ai", "what kind of bot are you", "your background",
+                "tell me about yourself", "what's your deal", "what are you for"
+            ],
+            "responses": [
+                "I'm your dedicated AI Program Assistant, created to guide you through every aspect of our artificial intelligence curriculum - from courses to career outcomes.",
+                "I'm an advanced chatbot specifically designed to provide comprehensive information about our AI education programs, admissions process, and career pathways.",
+                "As your virtual AI education consultant, my purpose is to help you navigate our programs, courses, and learning resources with personalized guidance."
+            ],
+            "context": ["self_description"]
+        },
+
+        {
+            "tag": "ai_definition",
+            "patterns": [
+                "what is ai", "define ai", "what does ai mean", "explain artificial intelligence",
+                "ai meaning", "what's ai", "tell me about ai", "what ai means",
+                "what artificial intelligence is", "can you define ai", "description of ai",
+                "explain ai", "what do you mean by ai", "define artificial intelligence",
+                "what constitutes ai", "ai definition", "what's artificial intelligence",
+                "tell me what ai is", "how would you define ai", "meaning of artificial intelligence",
+                "what does ai stand for", "explain ai simply", "brief ai explanation",
+                "ai in simple terms", "what exactly is ai", "ai for beginners explanation",
+                "understanding ai basics", "ai fundamental definition"
+            ],
+            "responses": [
+                "Artificial Intelligence (AI) involves creating computer systems that can perform tasks typically requiring human intelligence - like learning, decision-making, and problem-solving - through advanced algorithms and data processing.",
+                "At its core, AI is about developing machines that can think, learn, and adapt. This includes machine learning, natural language processing, computer vision, and robotics.",
+                "AI enables computers to mimic human cognitive functions. Our program covers everything from basic concepts to cutting-edge applications across industries."
+            ],
+            "context": ["ai_basics"]
+        },
+
+        {
+            "tag": "admission_requirements",
+            "patterns": [
+                "admission requirements", "what do i need to apply", "application criteria",
+                "entry requirements", "eligibility criteria", "prerequisites for admission",
+                "what's needed to apply", "application qualifications", "minimum requirements",
+                "required qualifications", "what you need to apply", "application prerequisites",
+                "entry qualifications", "admission criteria", "application necessities",
+                "what's required to join", "minimum qualifications", "application must haves",
+                "what do applicants need", "basic requirements", "mandatory requirements",
+                "essential qualifications", "application conditions", "admission prerequisites",
+                "what's expected of applicants", "application benchmarks"
+            ],
+            "responses": [
+                "Our admission requirements include: 1) High school diploma or equivalent 2) Basic math proficiency 3) Introductory programming knowledge (Python preferred) 4) Personal statement 5) Letters of recommendation",
+                "To apply, you'll need: Completed application form, academic transcripts, proof of math/programming fundamentals, statement of purpose, and two professional references.",
+                "The essential requirements are: Math through pre-calculus, basic programming experience, strong analytical skills, and passion for AI demonstrated through your application materials."
+            ],
+            "context": ["admissions_process"]
+        },
+
+        {
+            "tag": "core_curriculum",
+            "patterns": [
+                "what courses are required", "mandatory courses", "core curriculum",
+                "required classes", "essential courses", "must take classes",
+                "program requirements", "degree requirements", "compulsory courses",
+                "what's in the core", "main courses", "fundamental classes",
+                "required subjects", "core program", "basic curriculum",
+                "main curriculum", "required coursework", "core classes",
+                "central curriculum", "principal courses", "obligatory classes",
+                "foundational curriculum", "required program", "core learning path",
+                "main requirements", "essential curriculum"
+            ],
+            "responses": [
+                "Our core curriculum includes: 1) Python for AI 2) Mathematics for Machine Learning 3) Data Structures & Algorithms 4) Intro to AI & ML 5) Statistics for Data Science 6) Neural Networks 7) Ethics in AI",
+                "Every student completes these foundational courses: Programming Fundamentals, Linear Algebra, Probability, Machine Learning Basics, Data Visualization, and AI System Design.",
+                "The required core consists of: Computational Thinking, Discrete Math, Database Systems, ML Algorithms, Deep Learning, and a Capstone Project."
+            ],
+            "context": ["curriculum_details"]
+        },
+
+        {
+            "tag": "specialization_options",
+            "patterns": [
+                "what specializations are available", "concentration options", "focus areas",
+                "specialty tracks", "program concentrations", "available specializations",
+                "what can i specialize in", "track options", "emphasis choices",
+                "specialization paths", "focus tracks", "concentration paths",
+                "specialty areas", "what are the tracks", "available focuses",
+                "specialization choices", "program tracks", "available concentrations",
+                "specialty options", "emphasis areas", "focus options",
+                "what specialties exist", "available tracks", "concentration choices",
+                "specialization list", "focus path options"
+            ],
+            "responses": [
+                "We offer five cutting-edge specializations: 1) Machine Learning Engineering 2) Natural Language Processing 3) Computer Vision 4) Robotics & Autonomous Systems 5) AI for Business",
+                "Choose from these advanced tracks: Deep Learning, AI System Architecture, Data Science, Intelligent Systems, or Human-AI Interaction.",
+                "Specialize in: Predictive Analytics, AI Security, Healthcare AI, Financial AI, or Computer Perception based on your career goals."
+            ],
+            "context": ["program_options"]
+        },
+
+        {
+            "tag": "faculty_expertise",
+            "patterns": [
+                "who are the professors", "faculty backgrounds", "instructor qualifications",
+                "teacher expertise", "professor experience", "who teaches the courses",
+                "faculty credentials", "instructor backgrounds", "teacher qualifications",
+                "professor specialties", "who are the lecturers", "faculty specializations",
+                "instructor experience", "teacher credentials", "professor backgrounds",
+                "who delivers courses", "faculty research areas", "instructor specialties",
+                "teacher expertise areas", "professor focus areas", "lecturer qualifications",
+                "who are the educators", "faculty achievements", "instructor publications"
+            ],
+            "responses": [
+                "Our faculty includes: Dr. Chen (ex-Google Brain, Deep Learning), Dr. Rodriguez (NLP at Meta), Dr. Park (Computer Vision PhD from MIT), and Dr. Johnson (AI Ethics researcher).",
+                "You'll learn from: Machine Learning experts with industry experience at Amazon, Microsoft Research, and OpenAI, plus PhDs from top universities worldwide.",
+                "Faculty highlights: 3 IEEE Fellows, 5 former Chief AI Officers, 2 Turing Award nominees, and researchers published in Nature AI and NeurIPS."
+            ],
+            "context": ["program_quality"]
+        },
+
+        {
+            "tag": "career_services",
+            "patterns": [
+                "career support services", "job placement help", "employment assistance",
+                "career preparation", "job search support", "professional development",
+                "career guidance", "employment preparation", "job hunting help",
+                "career resources", "job placement services", "employment resources",
+                "career counseling", "job search assistance", "professional guidance",
+                "career planning", "employment support", "job market preparation",
+                "career workshops", "job placement program", "employment readiness",
+                "career development", "job search resources", "professional training",
+                "career advancement help"
+            ],
+            "responses": [
+                "Our comprehensive career services include: 1) Resume/LinkedIn reviews 2) Mock technical interviews 3) Portfolio building 4) Company networking events 5) Exclusive job board 6) Salary negotiation workshops",
+                "We provide: Dedicated career coach, AI recruiter connections, hackathon opportunities, internship placement, and annual career fair with 100+ tech companies.",
+                "Career support includes: Personalized career roadmap, technical interview prep, GitHub portfolio guidance, recruiter matching, and alumni mentorship program."
+            ],
+            "context": ["career_support"]
+        },
+
+        {
+            "tag": "tech_requirements",
+            "patterns": [
+                "technical requirements", "computer specs", "hardware needed",
+                "software requirements", "what computer do i need", "laptop specifications",
+                "technical specifications", "system requirements", "computing needs",
+                "required hardware", "necessary software", "machine specifications",
+                "what specs do i need", "computer requirements", "laptop requirements",
+                "technical needs", "system specs", "computing requirements",
+                "hardware specifications", "software needs", "machine requirements",
+                "what technology is needed", "computer necessities", "technical prerequisites"
+            ],
+            "responses": [
+                "Minimum requirements: Laptop with 16GB RAM, 4-core CPU, dedicated GPU (NVIDIA preferred), 500GB SSD, and ability to run Docker containers.",
+                "You'll need: Windows 10/11 or macOS with Python 3.8+, ability to install ML libraries (TensorFlow/PyTorch), and reliable internet for cloud computing labs.",
+                "We recommend: Gaming laptop or workstation with NVIDIA RTX GPU, 32GB RAM, and dual monitors for optimal learning experience with our AI tools."
+            ],
+            "context": ["program_preparation"]
+        },
+
+        {
+            "tag": "financial_support",
+            "patterns": [
+                "financial aid options", "scholarships available", "tuition assistance",
+                "payment plans", "program costs", "how to pay for it",
+                "financial support", "funding options", "scholarship opportunities",
+                "tuition help", "payment options", "financial assistance",
+                "cost assistance", "funding resources", "scholarship program",
+                "tuition reduction", "payment assistance", "financial resources",
+                "cost support", "funding assistance", "scholarship information",
+                "tuition payment help", "financial help", "cost reduction options"
+            ],
+            "responses": [
+                "We offer: Merit scholarships (up to 50% tuition), need-based grants, monthly payment plans, employer sponsorship programs, and military/veteran benefits.",
+                "Financial options include: Early enrollment discounts, referral scholarships, income-share agreements, and partnerships with lending institutions.",
+                "Available support: Diversity in AI scholarships, women in tech grants, corporate-sponsored seats, and deferred tuition plans for qualified students."
+            ],
+            "context": ["program_costs"]
+        },
+
+        {
+            "tag": "campus_life",
+            "patterns": [
+                "student life", "campus experience", "learning environment",
+                "program culture", "student community", "campus atmosphere",
+                "learning community", "student experience", "campus culture",
+                "program environment", "student community life", "campus vibe",
+                "learning atmosphere", "student culture", "campus community",
+                "program vibe", "student environment", "campus facilities",
+                "learning facilities", "student resources", "campus resources",
+                "program facilities", "student support", "campus activities"
+            ],
+            "responses": [
+                "Our vibrant community includes: AI hackathons, research symposiums, industry speaker series, study groups, and social events in our dedicated AI lab spaces.",
+                "Experience: Collaborative workspaces, 24/7 access to GPU clusters, student-led AI clubs, and regular networking events with local tech companies.",
+                "Campus life features: Modern computing labs, quiet study zones, mentorship programs, demo days, and connections to our 5,000+ AI alumni network."
+            ],
+            "context": ["student_experience"]
+        },
+
+        {
+            "tag": "alumni_success",
+            "patterns": [
+                "where do graduates work", "alumni outcomes", "graduate placements",
+                "employment outcomes", "where students get jobs", "graduate success",
+                "alumni careers", "graduate employment", "student outcomes",
+                "where alumni work", "graduate destinations", "employment statistics",
+                "alumni achievements", "graduate results", "student placements",
+                "where graduates go", "alumni placements", "graduate careers",
+                "student employment", "alumni employment", "graduate outcomes",
+                "where students end up", "alumni destinations", "career outcomes"
+            ],
+            "responses": [
+                "Our graduates work at: Google AI, OpenAI, NVIDIA, Tesla, Amazon AWS, Microsoft Research, and top AI startups - with average starting salary of $112,000.",
+                "90% of graduates secure AI roles within 3 months at companies like IBM Watson, Facebook AI, Intel AI, and leading healthcare/fintech AI firms.",
+                "Alumni hold positions as: ML Engineers (45%), Data Scientists (30%), AI Researchers (15%), and AI Product Managers (10%) across diverse industries."
+            ],
+            "context": ["career_outcomes"]
+        },
+
+        {
+            "tag": "application_steps",
+            "patterns": [
+                "how to apply", "application process", "admission steps",
+                "enrollment process", "how to enroll", "getting admitted",
+                "application procedure", "admission procedure", "enrollment steps",
+                "how to get in", "steps to apply", "application requirements",
+                "admission process", "enrollment procedure", "how admission works",
+                "application timeline", "admission steps", "enrollment requirements",
+                "how applications work", "steps for admission", "application phases",
+                "admission phases", "enrollment phases", "application components"
+            ],
+            "responses": [
+                "4 simple steps: 1) Online application 2) Technical assessment 3) Admissions interview 4) Enrollment deposit. Most complete the process in 2-3 weeks.",
+                "Our streamlined process: Submit application → Complete coding challenge → Interview with advisor → Receive decision → Secure your seat with deposit.",
+                "To apply: 1) Create account 2) Upload documents 3) Complete assessment 4) Interview 5) Get decision within 10 business days."
+            ],
+            "context": ["admissions_process"]
+        },
+
+        {
+            "tag": "program_comparison",
+            "patterns": [
+                "how does this compare", "versus other programs", "better than others",
+                "program advantages", "why choose this", "comparison with others",
+                "how is this different", "unique aspects", "what makes this special",
+                "competitive advantages", "why this program", "versus alternatives",
+                "compare to others", "how stands out", "special features",
+                "distinguishing factors", "what sets apart", "comparative advantages",
+                "why pick this", "versus competitors", "how differs from others",
+                "unique benefits", "superior aspects", "competitive edge"
+            ],
+            "responses": [
+                "Key advantages: 1) Industry-aligned curriculum 2) Practitioner faculty 3) Hands-on projects 4) Career support 5) Strong alumni network 6) Cutting-edge specializations",
+                "We stand out through: Real-world project experience, personalized mentorship, corporate partnerships, and our focus on applied AI rather than just theory.",
+                "Compared to others: Our program offers more practical hours (600+), direct industry connections, and a project portfolio requirement that impresses employers."
+            ],
+            "context": ["program_quality"]
+        },
+
+        {
+            "tag": "time_commitment",
+            "patterns": [
+                "time required", "weekly hours", "time investment",
+                "hours per week", "time expectation", "program workload",
+                "study time", "learning hours", "time demands",
+                "weekly commitment", "time needed", "hours required",
+                "study commitment", "learning commitment", "time expectation",
+                "weekly workload", "study demands", "learning demands",
+                "time necessary", "hours per day", "daily commitment",
+                "time allocation", "study hours", "learning time"
+            ],
+            "responses": [
+                "Expect: 15-20 hours/week for full-time (6 month completion), 8-10 hours/week for part-time (12 month completion), plus project work.",
+                "Time commitment: 4-6 hours daily for immersive track, 10-12 hours weekly for flexible track, with additional time for capstone projects.",
+                "Our program requires: 600 total hours (lectures + labs + projects) which most complete in 6-12 months depending on pace."
+            ],
+            "context": ["program_details"]
+        },
+
+        {
+            "tag": "prerequisite_skills",
+            "patterns": [
+                "what should i know", "preparation needed", "skills required",
+                "knowledge prerequisites", "what to learn first", "prep work",
+                "required knowledge", "necessary skills", "preparatory skills",
+                "what to study first", "prior knowledge", "foundational skills",
+                "preparatory knowledge", "required preparation", "what to know before",
+                "expected knowledge", "pre-program skills", "entry skills",
+                "pre-course knowledge", "background needed", "preliminary skills",
+                "what to prepare", "expected preparation", "prior learning"
+            ],
+            "responses": [
+                "Before starting: Comfort with Python, high school math (algebra, stats), basic algorithms, and willingness to learn mathematical concepts.",
+                "We expect: Programming fundamentals (variables, loops, functions), high school level math, and logical thinking skills. We offer prep materials.",
+                "Required foundation: Problem-solving skills, basic coding experience (any language), and math through pre-calculus. No prior AI knowledge needed."
+            ],
+            "context": ["program_preparation"]
+        },
+
+        {
+            "tag": "international_students",
+            "patterns": [
+                "international students", "visa requirements", "foreign students",
+                "study visa", "international applicants", "overseas students",
+                "non-native students", "study permit", "international admissions",
+                "foreign applicants", "visa process", "study abroad",
+                "international requirements", "visa information", "foreign admissions",
+                "non-resident students", "study visa process", "international enrollment",
+                "overseas applicants", "visa assistance", "foreign enrollment",
+                "international process", "study permit process", "non-citizen students"
+            ],
+            "responses": [
+                "For international students: We provide I-20 for F-1 visas, have dedicated international advisors, and offer TOEFL/IELTS waivers for qualified applicants.",
+                "We welcome students worldwide! Our international office assists with visas, housing, and cultural adjustment. 30% of our students come from overseas.",
+                "International requirements: Equivalent academic credentials, proof of English proficiency (unless from English-speaking country), and financial documentation."
+            ],
+            "context": ["admissions_process"]
+        },
+
+        {
+            "tag": "certification_value",
+            "patterns": [
+                "is it accredited", "recognized certification", "industry recognition",
+                "program accreditation", "certification value", "degree recognition",
+                "is this certified", "official recognition", "academic recognition",
+                "certification worth", "program reputation", "is this legitimate",
+                "recognized degree", "accredited program", "certification acceptance",
+                "industry respect", "program standing", "is this credible",
+                "recognized credentials", "academic credibility", "certification standing",
+                "program validation", "is this respected", "certification reputation"
+            ],
+            "responses": [
+                "Our program is: Regionally accredited, recognized by the AI Industry Association, and our graduates are hired by top tech companies worldwide.",
+                "Accreditation: Recognized by the Department of Education, with curriculum aligned to IEEE and ACM AI standards. Our certificate opens doors globally.",
+                "Industry respect: Our certification is valued by employers, with graduates at FAANG companies, and we're ranked among top AI programs nationally."
+            ],
+            "context": ["program_quality"]
+        },
+
+        {
+            "tag": "hands_on_projects",
+            "patterns": [
+                "project work", "hands on experience", "practical applications",
+                "real world projects", "applied learning", "portfolio projects",
+                "coding projects", "building projects", "practical work",
+                "actual implementation", "project experience", "applied projects",
+                "real projects", "portfolio work", "hands on coding",
+                "practical experience", "building applications", "project based",
+                "implementation work", "applied coding", "real coding",
+                "portfolio building", "practical implementation", "actual projects"
+            ],
+            "responses": [
+                "You'll complete: 5 portfolio projects including a sentiment analysis tool, recommendation system, computer vision application, and your capstone project.",
+                "Project highlights: Build a working chatbot, develop a predictive model, create a computer vision prototype, and solve a real-world problem for your capstone.",
+                "Our project-based approach includes: Monthly hackathons, quarterly demo days, and 4 major projects that form your professional AI portfolio."
+            ],
+            "context": ["curriculum_details"]
+        },
+
+        {
+            "tag": "further_learning",
+            "patterns": [
+                "what after this", "next steps after", "continuing education",
+                "further learning", "after graduation", "what to do next",
+                "advanced learning", "next level", "post program",
+                "after completion", "future learning", "continued education",
+                "what comes next", "after this program", "subsequent steps",
+                "ongoing education", "next educational steps", "follow up learning",
+                "after finishing", "subsequent learning", "advanced studies",
+                "what to study next", "continuing studies", "lifelong learning"
+            ],
+            "responses": [
+                "After completing: Many pursue our Advanced AI Certificate, specialize further with micro-credentials, or enter our industry partner apprenticeship programs.",
+                "Next steps: 1) Enter workforce 2) Pursue specialization 3) Continue to Master's 4) Join research team 5) Start AI business with our incubator support.",
+                "We offer: Advanced modules in Quantum ML, Neurosymbolic AI, and other cutting-edge areas, plus pathways to graduate degrees with partner universities."
+            ],
+            "context": ["career_development"]
+        },
+
+        {
+            "tag": "miscellaneous_questions",
+            "patterns": [
+                "i have another question", "something else", "different question",
+                "unrelated question", "other inquiry", "another matter",
+                "separate question", "new question", "different topic",
+                "other question", "change subject", "switch topics",
+                "not about this", "something different", "off topic",
+                "other subject", "new topic", "different matter",
+                "another topic", "separate matter", "unrelated matter",
+                "other issue", "change focus", "new subject"
+            ],
+            "responses": [
+                "I'm happy to help with other questions. What would you like to know about?",
+                "Let me know what other information you need about our AI programs.",
+                "I can assist with various topics - admissions, curriculum, careers. What's your question?"
+            ],
+            "context": ["general_inquiry"]
+        },
+
+        {
+            "tag": "error_resolution",
+            "patterns": [
+                "that's not what i asked", "you misunderstood", "wrong answer",
+                "not what i meant", "incorrect response", "misinterpreted question",
+                "that doesn't help", "irrelevant answer", "off track",
+                "not helpful", "missed the point", "wrong information",
+                "doesn't answer question", "not what i wanted", "inaccurate response",
+                "unhelpful answer", "didn't address question", "missing the mark",
+                "not relevant", "doesn't apply", "not on topic",
+                "not useful", "didn't help", "wrong direction"
+            ],
+            "responses": [
+                "I apologize for the confusion. Could you please rephrase your question so I can better assist you?",
+                "Let me try again. Could you clarify what information you're looking for?",
+                "I want to make sure I understand correctly. Would you mind asking your question differently?"
+            ],
+            "context": ["troubleshooting"]
+        }
+    ]
+}
