@@ -4,4 +4,3 @@ numpy
 tensorflow
 nltk
 jinja2
-python-3.11
